@@ -74,8 +74,8 @@ const monthlyPayment = computed(() => {
       </div>
 
       <select class="form-select formInput" id="amount" v-bind="newAmount">
-        <option selected>Choose...</option>
-        <option v-for="option in amountOptions" :value="option" :key="option">
+        <option selected class="formOption">Choose...</option>
+        <option v-for="option in amountOptions" :value="option" :key="option" class="formOption">
           {{ option }}
         </option>
       </select>
@@ -86,8 +86,8 @@ const monthlyPayment = computed(() => {
       </div>
 
       <select class="form-select formInput" id="duration" v-bind="newDuration">
-        <option selected>Choose...</option>
-        <option v-for="option in durationOptions" :value="option" :key="option">
+        <option selected class="formOption">Choose...</option>
+        <option v-for="option in durationOptions" :value="option" :key="option" class="formOption">
           {{ option }}
         </option>
       </select>
@@ -180,6 +180,10 @@ p {
   border-style: solid;
   border-color: white;
   width: 100px;
+}
+
+.formOption {
+  color: black;
 }
 
 .thirdText {
