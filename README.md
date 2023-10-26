@@ -24,6 +24,13 @@ Start the server
 
 **Client:** Vue 3, Bootstrap 5
 
+## Issues / Todo
+* Add validation errors/indicators
+* Fix County field's visual not updating
+* Match components' visual more closely to Figma
+* Code cleanup/refactor
+* Unify css
+* Tests
 
 ## Authors
 
